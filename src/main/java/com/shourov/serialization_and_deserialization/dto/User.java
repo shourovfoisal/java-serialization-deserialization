@@ -10,7 +10,7 @@ public class User implements Serializable {
 
     private String name;
     private String department;
-    private Long salary;
+    transient private Long salary;  // if 'transient' is added, the field won't be serialized
 
     public User() {}
 
